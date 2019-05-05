@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11 -O3 -O3 -DNDEBUG   CMakeFiles/magnetic.dir/main.cpp.o CMakeFiles/magnetic.dir/src/sysdef.cpp.o CMakeFiles/magnetic.dir/src/MagneticEdge.cpp.o CMakeFiles/magnetic.dir/src/SensorsData.cpp.o CMakeFiles/magnetic.dir/src/AsyncSerial.cpp.o  -o magnetic -rdynamic -lg2o_core -lg2o_stuff -lpthread -lboost_thread -lboost_system 

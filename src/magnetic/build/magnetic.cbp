@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="magnetic" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/nvidia/Qt demos/magnetic/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/nvidia/Qt demos/magnetic/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/nvidia/Qt demos/magnetic/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="magnetic">
+         <Option output="/home/nvidia/Qt demos/magnetic/build/magnetic" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nvidia/Qt demos/magnetic/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nvidia/Qt demos/magnetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/aarch64-linux-gnu" />
+            <Add directory="/usr/include/aarch64-linux-gnu/c++/5" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/lib/gcc/aarch64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/aarch64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 magnetic" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="magnetic/fast">
+         <Option output="/home/nvidia/Qt demos/magnetic/build/magnetic" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/nvidia/Qt demos/magnetic/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/nvidia/Qt demos/magnetic/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/aarch64-linux-gnu" />
+            <Add directory="/usr/include/aarch64-linux-gnu/c++/5" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/lib/gcc/aarch64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/aarch64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 magnetic/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/nvidia/Qt\ demos/magnetic/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/main.cpp">
+         <Option target="magnetic"/>
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/src/AsyncSerial.cpp">
+         <Option target="magnetic"/>
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/src/MagneticEdge.cpp">
+         <Option target="magnetic"/>
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/src/SensorsData.cpp">
+         <Option target="magnetic"/>
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/src/sysdef.cpp">
+         <Option target="magnetic"/>
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/nvidia/Qt demos/magnetic/cmake_modules/FindG2O.cmake">
+          <Option virtualFolder="CMake Files\cmake_modules\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

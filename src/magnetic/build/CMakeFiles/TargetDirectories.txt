@@ -1,0 +1,3 @@
+/home/nvidia/Qt demos/magnetic/build/CMakeFiles/edit_cache.dir
+/home/nvidia/Qt demos/magnetic/build/CMakeFiles/rebuild_cache.dir
+/home/nvidia/Qt demos/magnetic/build/CMakeFiles/magnetic.dir
