@@ -159,7 +159,7 @@ bool EdgeOrientation::write(std::ostream& /*os*/) const
 }
 
 #define D            0.076
-#define r_c          0.005           // 5 mm
+#define r_c          0.003           // 5 mm
 #define r_p          0.1
 void EdgeOrientation::computeError()
 {
@@ -185,14 +185,14 @@ void EdgeOrientation::computeError()
 //  _error(1) = Bt-7.918e-8;            // BT is regarded as a constant
 //  _error(1) = 1e-17/(max_value*fabs(Bt)*1e8);
 
-//  _error(1) = 0.5*min_value*min_value;
-//  _error(2) = Bt<1e-8 ? 1e-13/Bt: 0;
-
 //  _error(3) = sigma1*0.5*(c-0.076)*(c-0.076);
 //  _error(4) = sigma2*0.5*((p-0)*(p-0));
 
-//  _error(3) = sigma1*0.5*(max_c-r_c)*(max_c-r_c);           // (c-0.076)*(c-0.076);
-//  _error(4) = sigma2*0.5*(max_p-r_p)*(max_p-r_p);           //   sigma2*0.5*(p-0)*(p-0);
+  _error(1) = 0.5*min_value*min_value;
+  _error(2) = (Bt<7e-8) ? (1e-16/Bt) : 0;
+
+  _error(3) = sigma1*0.5*(max_c-r_c)*(max_c-r_c);           // (c-0.076)*(c-0.076);
+  _error(4) = sigma2*0.5*(max_p-r_p)*(max_p-r_p);           //   sigma2*0.5*(p-0)*(p-0);
 
 }
 

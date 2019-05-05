@@ -113,7 +113,7 @@ int main(int argc, char** argv)
 
     // 1. add the parameter vertex
     Eigen::Vector7d init_value;
-    init_value << 0.03, -0.03, -0.076, 0, 0, -1, Bt_guess;
+    init_value << -0.03, -0.03, 0.076, 0, 0, 1, Bt_guess;
     VertexParams* params = new VertexParams();
     params->setId(0);
     params->setEstimate(init_value); // some initial value for the params
