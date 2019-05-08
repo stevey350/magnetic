@@ -21,8 +21,8 @@ class LM_Process
 {
 public:
 
-	LM_Process(){};
-	~LM_Process(){};
+    LM_Process();
+    ~LM_Process();
 
 	void InitData(double (*B)[3], double (*L)[3], double* res, int sensor_num, int object_num)
 	{

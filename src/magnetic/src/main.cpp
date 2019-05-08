@@ -48,6 +48,7 @@
 #include "g2o/solvers/dense/linear_solver_dense.h"
 
 #include "LM_Process.h"
+#include "PSO.h"
 
 using namespace std;
 
@@ -150,6 +151,10 @@ int main(int argc, char** argv)
 //    LM_Process obj_res;
 //    double object_para[7] = {0.003, 0.003, 0.076, 0, 0.1, 0.9, Bt_guess};
 
+    // PSO
+    bool is_need_init = false;
+    PSO_Process pso;
+
     while(ros::ok())
     {
         if(0 == read_frame_ok)
@@ -169,7 +174,22 @@ int main(int argc, char** argv)
         }
 //        cout << "Bst = " << Bst << endl;
         if(Bst <= 670e-6)
+        {
+            is_need_init = true;
             continue;
+        }
+
+        if(is_need_init)
+        {
+            double tmp_res[7] = {0};
+
+            pso.InitData(valid_sensors_data, sensor_position, tmp_res, 9, 1);
+            pso.Compute();
+            init_value << tmp_res[0], tmp_res[1], tmp_res[2], tmp_res[3], tmp_res[4], tmp_res[5], tmp_res[6];
+            params->setEstimate(init_value);
+
+            is_need_init = false;
+        }
 
         /*
         obj_res.InitData(valid_sensors_data, sensor_position, object_para, 9, 1);

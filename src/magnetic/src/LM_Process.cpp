@@ -2,6 +2,16 @@
 #include <math.h>
 #include "LM_Process.h"
 
+LM_Process::LM_Process()
+{
+
+}
+
+LM_Process::~LM_Process()
+{
+
+}
+
 //==============================================================
 //Ep=B-f(res)
 //磁场信号真实值与估计值之差
